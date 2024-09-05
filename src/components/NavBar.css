@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar--visible {
+  transform: translateY(0);
+}
+
+.navbar--hidden {
+  transform: translateY(-100%);
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White text */
+  margin-left: 1vw;
+}
+
+.navbar__menu-button {
+  padding: 0.5rem 1rem;
+  margin-right: 4em;
+  cursor: pointer;
+}

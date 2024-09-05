@@ -1,0 +1,87 @@
+/* General container */
+.work-page-container {
+  background-color: #000;
+  color: #fff;
+  padding: 10vh 3vw; /* Reduced padding for compact fit */
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Header section */
+.work-page-header {
+  font-size: 5vw; /* Slightly smaller header text */
+  font-weight: bold;
+  text-align: left;
+  word-break: break-all;
+  margin-bottom: 0 !important;
+}
+
+/* Content layout */
+.work-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.work-section {
+  margin-top: 5vh; /* Reduced space between sections */
+}
+
+/* Text section */
+.work-page-text {
+  margin-right: 5vw; /* Reduced margin for text section */
+}
+
+.work-page-video-container {
+  margin-top: 8vh; /* Reduced margin for video container */
+}
+
+/* Video section */
+.work-page-video {
+  /* */
+  width: 45vw;
+}
+
+.work-page-video video {
+  width: 100%;
+  max-height: 50vh; /* Smaller max-height for video */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Section titles */
+.work-details-section-title {
+  font-size: 1.84vw; /* Smaller section titles */
+  font-weight: bold;
+  color: #ff9200;
+  margin-bottom: 1.5vh;
+}
+
+/* Section headers */
+.work-section-text-container {
+  /* Reduced space between sections */
+}
+
+/* Subheaders */
+.work-section-subheader {
+  font-size: 1.2vw; /* Smaller subheader text */
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+/* Paragraph content */
+.work-section-content {
+  font-size: 1.18vw; /* Reduced paragraph text size */
+  line-height: 1.4em;
+  margin-bottom: 1.5vh; /* Less margin between paragraphs */
+}
+
+/* Back button */
+.back-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1vw; /* Smaller button text */
+  cursor: pointer;
+  margin-bottom: 3.75vh;
+}

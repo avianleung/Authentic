@@ -1,0 +1,27 @@
+.image-circle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-left: 3em
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+  
+.text-section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text-section-paragraph {
+  font-size: 0.5em;
+}
+  

@@ -1,0 +1,47 @@
+.image-news-item {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set the height for image news items */
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-news-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .image-news-item.hovered img {
+    filter: brightness(50%);
+  }
+  
+  .drawer {
+    position: absolute;
+    bottom: -100%; /* Initially hide the drawer */
+    left: 0;
+    width: 100%;
+    background-color: #ff5733;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease-in-out;
+  }
+  
+  .drawer h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .drawer p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .image-news-item.hovered .drawer {
+    bottom: 0;
+  }
+  

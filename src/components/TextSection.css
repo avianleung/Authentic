@@ -1,0 +1,27 @@
+.image-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+  }
+  
+  .content {
+    text-align: left;
+    position: relative;
+    width: 85%;
+    height: 100%;
+    padding: 50px;
+    border: 2px solid #ff0; /* Yellow border */
+    border-top-right-radius: 60% 30vw;
+    border-bottom-right-radius: 60% 30vw;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    background: url('../assets/AboutSection.jpeg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
