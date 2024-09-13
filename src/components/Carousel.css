@@ -1,0 +1,25 @@
+.carousel-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 20px 0;
+}
+
+.carousel-slide {
+  display: inline-flex;
+  animation: 35s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel-image {
+  height: 50px;
+  margin: 0 40px;
+}

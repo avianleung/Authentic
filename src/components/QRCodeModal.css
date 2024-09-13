@@ -1,0 +1,66 @@
+/* Overlay for the QR Code Modal */
+.qr-code-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* QR Code Modal Container */
+.qr-code-modal {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* QR Code Modal Heading */
+.qr-code-modal h3 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+/* QR Code Image */
+.qr-code-modal img {
+  width: 100%;
+  height: auto;
+}
+
+/* Close Button */
+.qr-code-modal__close-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.qr-code-modal__close-button:hover {
+  background-color: #0056b3;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
