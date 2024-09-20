@@ -134,3 +134,29 @@
     opacity: 1;
   }
 }
+
+.nav-modal-overlay.closing {
+  animation: fadeOut 0.3s forwards;
+}
+
+.modal.closing {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0); /* From normal position */
+  }
+  to {
+    transform: translateX(100%); /* Slide off-screen to the right */
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

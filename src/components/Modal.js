@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Modal.css'
 
 import QRCodeModal from './QRCodeModal' // Import the new QR code modal component
@@ -14,6 +14,7 @@ const Modal = ({ show, onClose }) => {
   const [showQRCodeModal, setShowQRCodeModal] = useState(false)
   const [selectedQR, setSelectedQR] = useState(null)
   const [selectedSocialName, setSelectedSocialName] = useState('')
+  const [isClosing, setIsClosing] = useState(false)
 
   const handleIconClick = (socialName, qrCode) => {
     setSelectedQR(qrCode)
@@ -21,12 +22,21 @@ const Modal = ({ show, onClose }) => {
     setShowQRCodeModal(true)
   }
 
-  if (!show) return null
+  // Trigger close animation and remove modal after it finishes
+  const handleClose = () => {
+    setIsClosing(true)
+    setTimeout(() => {
+      onClose() // Remove modal after animation
+      setIsClosing(false) // Reset closing state
+    }, 500) // Duration of the slideOut animation
+  }
+
+  if (!show && !isClosing) return null
 
   return (
     <>
-      <div className='nav-modal-overlay'>
-        <div className='modal'>
+      <div className={`nav-modal-overlay ${isClosing ? 'closing' : ''}`}>
+        <div className={`modal ${isClosing ? 'closing' : ''}`}>
           <div className='modal__content'>
             <div className='modal__info'>
               <div>

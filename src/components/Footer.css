@@ -22,7 +22,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20vh;
-  animation: 30s slide infinite linear;
+  animation: 120s slide infinite linear;
 }
 
 @keyframes slide {
@@ -40,9 +40,13 @@
 
 .award-placeholder {
   width: 30vw;
-  height: 30vh;
+  height: auto;
   border-radius: 8px;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-branding h2 {
@@ -71,9 +75,14 @@
 }
 
 .footer-social-icons {
+  width: 9vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+}
+
+.social-icon {
+  cursor: pointer;
 }
 
 .social-placeholder {

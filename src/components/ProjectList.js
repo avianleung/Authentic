@@ -14,7 +14,7 @@ import nikeVideo from '../assets/Nike/short.mp4'
 import cnyVideo from '../assets/CNY/video1.mp4'
 import boVideo from '../assets/B&O/short.mp4'
 import mJxBeVideo from '../assets/MJxBe/short.mp4'
-import coachVideo from '../assets/Coach/short.mp4'
+import coachVideo from '../assets/Coach/1.mp4'
 import debeersImage from '../assets/Debeers/debeersImage.png'
 
 const projectData = [

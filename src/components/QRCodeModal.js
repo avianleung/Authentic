@@ -7,7 +7,7 @@ const QRCodeModal = ({ show, onClose, qrCode, socialName }) => {
   return (
     <div className='qr-code-modal-overlay' onClick={onClose}>
       <div className='qr-code-modal' onClick={(e) => e.stopPropagation()}>
-        <h3>{socialName} QR Code</h3>
+        {socialName && <h3>{socialName} QR Code</h3>}
         <div>
           <img src={qrCode} alt={`${socialName} QR Code`} style={{ width: '200px', height: '200px' }} />
         </div>
